@@ -155,7 +155,7 @@ RULE
 }
 
 resource "azurerm_management_group_policy_assignment" "privilege_escalation_prevention" {
-  name                 = "tos-escalation-prevention"
+  name                 = "ts-escalation-prevention"
   policy_definition_id = azurerm_policy_definition.privilege_escalation_prevention.id
   management_group_id  = var.scope
 }
